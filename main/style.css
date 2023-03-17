@@ -1,0 +1,579 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.mainContainer .navArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fafafa;
+  z-index: 5;
+}
+.mainContainer .navArea header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1112px;
+  width: 100%;
+  min-height: 81px;
+}
+.mainContainer .navArea header .logo img {
+  width: 143px;
+  height: 23px;
+}
+.mainContainer .navArea header nav {
+  width: 329px;
+}
+.mainContainer .navArea header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.mainContainer .navArea header nav ul li {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #89888D;
+}
+.mainContainer .navArea header nav ul li a {
+  text-decoration: none;
+  color: #89888D;
+}
+.mainContainer .navArea header nav ul li a:hover {
+  color: #2D314E;
+  border-bottom: 1px solid hsl(136, 65%, 51%);
+}
+.mainContainer .navArea header nav .sideNav ul {
+  display: none;
+}
+.mainContainer .navArea header button {
+  width: 162px;
+  height: 46px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border: none;
+  color: #fafafa;
+  border-radius: 50px;
+}
+.mainContainer .navArea header button:hover {
+  opacity: 0.8;
+}
+.mainContainer .navArea header .burger img {
+  display: none;
+}
+.mainContainer .heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #fafafa;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+}
+.mainContainer .heroContainer .heroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1112px;
+  width: 100%;
+  min-height: 656px;
+}
+.mainContainer .heroContainer .heroBanner .heroText {
+  max-width: 446px;
+  width: 100%;
+}
+.mainContainer .heroContainer .heroBanner .heroText h2 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 43px;
+  font-weight: 400;
+}
+.mainContainer .heroContainer .heroBanner .heroText p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 35px;
+  text-align: left;
+}
+.mainContainer .heroContainer .heroBanner .heroText button {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  width: 162px;
+  height: 45px;
+  margin-top: 40px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border: none;
+  color: #fafafa;
+  border-radius: 50px;
+}
+.mainContainer .heroContainer .heroBanner .heroText button:hover {
+  opacity: 0.8;
+}
+.mainContainer .heroContainer .heroBanner .heroImg {
+  max-width: 581px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  align-self: flex-start;
+}
+.mainContainer .heroContainer .heroBanner .heroImg .bgBanner {
+  width: 925px;
+  height: 1163px;
+  position: absolute;
+  top: -299px;
+  right: -308px;
+  z-index: 4;
+  overflow: hidden;
+}
+.mainContainer .heroContainer .heroBanner .heroImg .secondBg {
+  position: absolute;
+  bottom: -517px;
+  right: -295px;
+  z-index: 7;
+  overflow: hidden;
+}
+.mainContainer .heroContainer .heroBanner .heroImg .spBg {
+  display: none;
+}
+.mainContainer .serviceContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-color: #F4F5F7;
+  z-index: 2;
+}
+.mainContainer .serviceContainer .productChoice {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  row-gap: 117px;
+  max-width: 1112px;
+  width: 100%;
+  min-height: 675px;
+  padding-top: 111px;
+}
+.mainContainer .serviceContainer .productChoice .productTitle {
+  max-width: 614px;
+  width: 100%;
+}
+.mainContainer .serviceContainer .productChoice .productTitle h2 {
+  font-size: 32px;
+  font-family: "Public Sans", sans-serif;
+}
+.mainContainer .serviceContainer .productChoice .productTitle p {
+  font-size: 16px;
+  font-family: "Public Sans", sans-serif;
+}
+.mainContainer .serviceContainer .productChoice .choosesProduct {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  -moz-column-gap: 21px;
+       column-gap: 21px;
+}
+.mainContainer .serviceContainer .productChoice .choosesProduct .serviceOffer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 27px;
+  width: 262px;
+  min-height: 266px;
+}
+.mainContainer .serviceContainer .productChoice .choosesProduct .serviceOffer .serviceImg img {
+  width: 73px;
+  height: 73px;
+}
+.mainContainer .serviceContainer .productChoice .choosesProduct .serviceOffer h2 {
+  font-size: 20px;
+  font-family: "Public Sans", sans-serif;
+}
+.mainContainer .serviceContainer .productChoice .choosesProduct .serviceOffer p {
+  font-size: 16px;
+  font-family: "Public Sans", sans-serif;
+}
+.mainContainer .articleContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-color: #fafafa;
+}
+.mainContainer .articleContainer .article {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 1112px;
+  min-height: 660px;
+  padding-top: 98px;
+}
+.mainContainer .articleContainer .article h2 {
+  font-size: 30px;
+  font-family: "Public Sans", sans-serif;
+}
+.mainContainer .articleContainer .article h2 a {
+  text-decoration: none;
+  color: #2D314E;
+}
+.mainContainer .articleContainer .article h2 a:hover {
+  color: hsl(136, 65%, 51%);
+}
+.mainContainer .articleContainer .article .arcticleArea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-top: 49px;
+}
+.mainContainer .articleContainer .article .arcticleArea .arcticleCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 255px;
+  background-color: #ffffff;
+  padding-bottom: 24px;
+  border-radius: 15px;
+}
+.mainContainer .articleContainer .article .arcticleArea .arcticleCard img {
+  width: 255px;
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.mainContainer .articleContainer .article .arcticleArea .arcticleCard .small {
+  font-size: 12px;
+  font-family: "Public Sans", sans-serif;
+  width: 200px;
+}
+.mainContainer .articleContainer .article .arcticleArea .arcticleCard .arcticleCardTittle {
+  font-size: 14px;
+  font-family: "Public Sans", sans-serif;
+  width: 200px;
+}
+.mainContainer .articleContainer .article .arcticleArea .arcticleCard .arcticleRegular {
+  font-size: 14px;
+  font-family: "Public Sans", sans-serif;
+  width: 200px;
+}
+.mainContainer .footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #2D314E;
+}
+.mainContainer .footerContainer footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1112px;
+  width: 100%;
+  min-height: 190px;
+}
+.mainContainer .footerContainer footer .footerIcon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 190px;
+}
+.mainContainer .footerContainer footer .footerIcon h2 {
+  height: 25px;
+  background-color: #F4F5F7;
+  margin-bottom: 40px;
+}
+.mainContainer .footerContainer footer .footerIcon ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  row-gap: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.mainContainer .footerContainer footer .footerLink01 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 190px;
+}
+.mainContainer .footerContainer footer .footerLink01 ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  list-style: none;
+  row-gap: 10px;
+  color: #fafafa;
+}
+.mainContainer .footerContainer footer .footerLink01 ul li {
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+  color: #F4F7FF;
+}
+.mainContainer .footerContainer footer .footerLink01 ul li a {
+  text-decoration: none;
+  color: #F4F7FF;
+}
+.mainContainer .footerContainer footer .footerLink01 ul li a:hover {
+  color: hsl(136, 65%, 51%);
+}
+.mainContainer .footerContainer footer .footerButton {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 250px;
+}
+.mainContainer .footerContainer footer .footerButton button {
+  width: 163px;
+  height: 44px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border: none;
+  color: #fafafa;
+  border-radius: 50px;
+}
+.mainContainer .footerContainer footer .footerButton button:hover {
+  opacity: 0.8;
+}
+.mainContainer .footerContainer footer .footerButton p {
+  font-size: 14px;
+  font-family: "Public Sans", sans-serif;
+  color: #666881;
+}
+
+@media only screen and (max-width: 1112px) {
+  .mainContainer .navArea header {
+    padding: 0 10px;
+  }
+  .mainContainer .heroContainer .heroBanner {
+    padding: 0 10px;
+  }
+  .mainContainer .serviceContainer .productChoice {
+    padding: 0 10px;
+  }
+  .mainContainer .serviceContainer .productChoice .choosesProduct {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  .mainContainer .articleContainer .article {
+    padding: 0 10px;
+  }
+  .mainContainer .articleContainer .article .arcticleArea {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .mainContainer .footerContainer footer {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .mainContainer .navArea header {
+    max-width: 1024px;
+  }
+  .mainContainer .serviceContainer .productChoice .choosesProduct {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding-bottom: 20px;
+  }
+  .mainContainer .articleContainer .article .arcticleArea {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .mainContainer .navArea header {
+    max-width: 768px;
+  }
+  .mainContainer .heroContainer .heroBanner {
+    padding: 0 10px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .mainContainer .heroContainer .heroBanner .heroText {
+    text-align: center;
+  }
+  .mainContainer .heroContainer .heroBanner .heroImg {
+    max-width: 100%;
+  }
+  .mainContainer .heroContainer .heroBanner .heroImg .bgBanner {
+    width: 1317px;
+    height: 636px;
+    right: -277px;
+  }
+  .mainContainer .heroContainer .heroBanner .heroImg .secondBg {
+    width: 621px;
+    height: 447px;
+    bottom: -8px;
+    right: 57px;
+  }
+  .mainContainer .serviceContainer .productChoice .choosesProduct {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding-bottom: 20px;
+  }
+  .mainContainer .serviceContainer .productChoice .productTitle {
+    max-width: 100%;
+    text-align: center;
+  }
+  .mainContainer .serviceContainer .productChoice .choosesProduct .serviceOffer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .mainContainer .articleContainer .article {
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContainer .articleContainer .article .arcticleArea {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding-bottom: 20px;
+  }
+  .mainContainer .articleContainer .article h2 {
+    text-align: center;
+  }
+  .mainContainer .footerContainer footer {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .mainContainer .footerContainer footer .footerIcon {
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContainer .footerContainer footer .footerLink01 {
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContainer .footerContainer footer .footerLink01 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContainer .footerContainer footer .footerLink02 {
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContainer .footerContainer footer .footerButton {
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContainer .heroContainer .heroBanner .heroText p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .mainContainer .navArea header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+  }
+  .mainContainer .navArea header nav ul {
+    display: none;
+  }
+  .mainContainer .navArea header button {
+    display: none;
+  }
+  .mainContainer .navArea header nav .sideNav ul {
+    display: block;
+  }
+  .mainContainer .navArea header nav .sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 80px;
+    left: 0;
+    background: hsla(215, 29%, 25%, 0.6);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .mainContainer .navArea header nav .sideNav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    opacity: 1;
+    background: #333;
+    width: 270px;
+    height: 500px;
+    margin: 0 auto;
+    color: black;
+    background: #F4F5F7;
+    border-radius: 15px;
+    position: relative;
+  }
+  .mainContainer .navArea header nav .sideNav ul img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 15px;
+    right: 15px;
+  }
+  .mainContainer .navArea header nav .sideNav ul li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .mainContainer .navArea header nav .sideNav ul li a a {
+    text-align: center;
+  }
+  .mainContainer .navArea header .burger img {
+    display: block;
+    height: 15px;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .secondBg {
+    display: none;
+  }
+  .spBg {
+    display: block !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 7;
+    width: 315px;
+    height: 275px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */
